@@ -1,17 +1,20 @@
 <template>
   <NavigationBar :window-size=this.windowsSize />
+  <BottomNavigationBar v-if="windowsSize < 850"/>
 </template>
 
 <script>
 import NavigationBar from "@/components/NavigationBar";
+import BottomNavigationBar from "@/components/BottomNavigationBar";
 export default {
   name: 'App',
   data: function (){
     return {
-      windowsSize: 0,
+      windowsSize: window.innerWidth,
     }
   },
   components: {
+    BottomNavigationBar,
     NavigationBar
   },
   watch: {

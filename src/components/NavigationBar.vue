@@ -8,7 +8,7 @@
       <li v-if="windowSize > 851"><a href="#">Contact</a></li>
       <li v-if="windowSize > 851"><a href="#">FAQ</a></li>
       <li v-if="windowSize > 851"><a href="#">Help</a></li>
-      <li><a href="#">Become a Seller</a></li>
+      <li><a href="#">Login</a></li>
     </ul>
   </div>
   </nav>
@@ -42,20 +42,19 @@ export default {
 
   .nav-list li {
     list-style: none;
-    margin: 35px 0 0 30px;
-    padding: 15px 20px;
+    margin: 2rem 1rem 2rem 2rem;
+    /*padding: 15px 20px;*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: #99319B;
   }
 
-  .nav-list li:last-child{
+  .nav-list li:last-child a {
+    color: white;
+    display: inline-block;
     background: #99319B;
     margin-right: 25px;
     border-radius: 10px;
-  }
-
-  .nav-list li:last-child a {
-    color: white;
+    padding: 15px 25px;
   }
 </style>
